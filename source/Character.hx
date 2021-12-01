@@ -1,5 +1,6 @@
 package;
 
+import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.animation.FlxBaseAnimation;
 import flixel.graphics.frames.FlxAtlasFrames;
@@ -17,6 +18,13 @@ class Character extends FlxSprite
 	public var holdTimer:Float = 0;
 
 	public var canAutoAnim:Bool = true;
+
+		function jointex(frames1:FlxAtlasFrames, frames2:FlxAtlasFrames) {
+		for (frame in frames2.frames){
+			frames1.pushFrame(frame);
+		}
+		return frames1;
+	}
 
 	public function new(x:Float, y:Float, ?character:String = "bf", ?isPlayer:Bool = false)
 	{
@@ -457,7 +465,17 @@ class Character extends FlxSprite
 				antialiasing = false;
 
 			case 'parents-christmas':
-				frames = Paths.getSparrowAtlas("christmas/mom_dad_christmas_assets");
+				var tex = Paths.getSparrowAtlas('christmas/mom_dad_christmas_assets');
+				var tex2 = Paths.getSparrowAtlas('christmas/mom_dad_christmas_assets2');
+				var tex3 = Paths.getSparrowAtlas('christmas/mom_dad_christmas_assets3');
+
+
+				tex = jointex(tex, jointex(tex2, tex3));
+				
+				frames = tex;
+				//setGraphicSize(Std.int(width * 2));
+				//updateHitbox();
+
 				animation.addByPrefix('idle', 'Parent Christmas Idle', 24, false);
 				animation.addByPrefix('singUP', 'Parent Up Note Dad', 24, false);
 				animation.addByPrefix('singDOWN', 'Parent Down Note Dad', 24, false);
