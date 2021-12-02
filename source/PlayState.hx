@@ -905,7 +905,7 @@ class PlayState extends MusicBeatState
 		scoreTxt.scrollFactor.set();
 
 		creditTxt = new FlxText(876, 648, 348);
-                creditTxt.text = 'PORTED BY\nM.A. JIGSAW';
+                creditTxt.text = 'PORTED BY M.A JIGSAW\nOTIMIZADO BY FIREY';
                 creditTxt.setFormat(Paths.font("vcr"), 30, FlxColor.WHITE, RIGHT);
                 creditTxt.setBorderStyle(OUTLINE, FlxColor.BLACK, 3, 1);       
                 creditTxt.scrollFactor.set();
@@ -1639,9 +1639,9 @@ class PlayState extends MusicBeatState
 
 		switch(Config.accuracy){
 			case "none":
-				scoreTxt.text = "Score:" + songScore;
+				scoreTxt.text = "Pontos:" + songScore;
 			default:
-				scoreTxt.text = "Score:" + songScore + " | Misses:" + misses + " | Accuracy:" + truncateFloat(accuracy, 2) + "%";
+				scoreTxt.text = "Pontos:" + songScore + " | Erros:" + misses + " | Precisão:" + truncateFloat(accuracy, 2) + "%";
 		}
 
 		if (controls.PAUSE #if android || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
