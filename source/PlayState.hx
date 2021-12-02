@@ -905,7 +905,7 @@ class PlayState extends MusicBeatState
 		scoreTxt.scrollFactor.set();
 
 		creditTxt = new FlxText(876, 648, 348);
-                creditTxt.text = 'PORTED BY M.A JIGSAW\nOTIMIZADO BY FIREY';
+                creditTxt.text = 'OTIMIZADO POR FIREY';
                 creditTxt.setFormat(Paths.font("vcr"), 30, FlxColor.WHITE, RIGHT);
                 creditTxt.setBorderStyle(OUTLINE, FlxColor.BLACK, 3, 1);       
                 creditTxt.scrollFactor.set();
