@@ -41,7 +41,23 @@ class Character extends FlxSprite
 		{
 			case 'gf':
 				// GIRLFRIEND CODE
-				frames = Paths.getSparrowAtlas("GF_assets");
+
+				var tex = Paths.getSparrowAtlas('GF_assets');
+
+				switch PlayState.curStage.toLowerCase() {
+					case 'spooky':
+						tex = jointex(tex, Paths.getSparrowAtlas('GF_assets_week2'));
+					case 'stage':
+						if (PlayState.SONG.song.toLowerCase() == 'tutorial')
+						{
+							tex = jointex(tex, Paths.getSparrowAtlas('GF_assets_tutorial'));
+						}
+					case 'philly':
+						tex = jointex(tex, jointex(Paths.getSparrowAtlas('GF_assets_blowing'), Paths.getSparrowAtlas('GF_ass_sets_landing')));
+
+				}
+
+				frames = tex;
 				animation.addByPrefix('cheer', 'GF Cheer', 24, false);
 				animation.addByPrefix('singLEFT', 'GF left note', 24, false);
 				animation.addByPrefix('singRIGHT', 'GF Right Note', 24, false);
@@ -55,7 +71,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('scared', 'GF FEAR', 24);
 
 				addOffset('cheer');
-				addOffset('sad', -2, -21);
+				addOffset('sad', -2, -2);
 				addOffset('danceLeft', 0, -9);
 				addOffset('danceRight', 0, -9);
 
@@ -71,7 +87,11 @@ class Character extends FlxSprite
 				playAnim('danceRight');
 
 			case 'gf-christmas':
-				frames = Paths.getSparrowAtlas("christmas/gfChristmas");
+				tex = Paths.getSparrowAtlas('christmas/gfChristmas');
+
+				tex = jointex(tex, Paths.getSparrowAtlas('christmas/gfChristmas_em'));
+
+				frames = tex;
 				animation.addByPrefix('cheer', 'GF Cheer', 24, false);
 				animation.addByPrefix('singLEFT', 'GF left note', 24, false);
 				animation.addByPrefix('singRIGHT', 'GF Right Note', 24, false);
@@ -85,7 +105,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('scared', 'GF FEAR', 24);
 
 				addOffset('cheer');
-				addOffset('sad', 0, -21);
+				addOffset('sad', -2, -2);
 				addOffset('danceLeft', 0, -9);
 				addOffset('danceRight', 0, -9);
 
