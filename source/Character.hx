@@ -495,7 +495,7 @@ class Character extends FlxSprite
 				var tex8 = Paths.getSparrowAtlas('christmas/parents_mom_up');
 
 
-				tex = jointex(tex, jointex(tex2, tex3, tex4, tex5, tex6, tex7, tex8));
+				tex = jointex(tex, jointex(tex, jointex(tex, jointex(tex, jointex(tex, jointex(tex, jointex(tex, jointex(tex2, tex3, tex4, tex5, tex6, tex7, tex8));
 				
 				frames = tex;
 				//setGraphicSize(Std.int(width * 2));
