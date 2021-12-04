@@ -489,7 +489,7 @@ class Character extends FlxSprite
 
 				switch PlayState.curStage.toLowerCase() {
 					case 'mall':
-						tex = jointex(tex, jointex(Paths.getSparrowAtlas('christmas/parents_dad_down'), Paths.getSparrowAtlas('christmas/parents_dad_left'), Paths.getSparrowAtlas('christmas/parents_dad_up'), Paths.getSparrowAtlas('christmas/parents_mom_down'), Paths.getSparrowAtlas('christmas/parents_mom_up'), Paths.getSparrowAtlas('christmas/parents_mom_left') Paths.getSparrowAtlas('christmas/parents_dadmom_right')));
+						tex = jointex(tex, jointex(Paths.getSparrowAtlas('christmas/parents_dad_down'), Paths.getSparrowAtlas('christmas/parents_dad_left'), Paths.getSparrowAtlas('christmas/parents_dad_up'), Paths.getSparrowAtlas('christmas/parents_mom_down'), Paths.getSparrowAtlas('christmas/parents_mom_up'), Paths.getSparrowAtlas('christmas/parents_mom_left'), Paths.getSparrowAtlas('christmas/parents_dadmom_right')));
 
 				}
 
