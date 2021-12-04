@@ -35,6 +35,8 @@ class DialogueBox extends FlxSpriteGroup
 	var handSelect:FlxSprite;
 	var bgFade:FlxSprite;
 
+	var screenJustTouched:Bool = false;
+
 	public function new(talkingRight:Bool = true, ?dialogueList:Array<String>)
 	{
 		super();
@@ -170,7 +172,17 @@ class DialogueBox extends FlxSpriteGroup
 			dialogueStarted = true;
 		}
 
-		if (FlxG.keys.justPressed.ANY || FlxG.gamepads.anyJustPressed(ANY))
+		for (touch in FlxG.touches.list)
+		{
+			screenJustTouched = false;
+			
+			if (touch.justReleased){
+				screenJustTouched = true;
+			}
+		}
+			
+
+		if (screenJustTouched || FlxG.keys.justPressed.ANY && dialogueStarted == true)
 		{
 
 			if(dialogueFinished){

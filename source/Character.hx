@@ -50,7 +50,7 @@ class Character extends FlxSprite
 					case 'stage':
 						if (PlayState.SONG.song.toLowerCase() == 'tutorial')
 						{
-							tex = jointex(tex, Paths.getSparrowAtlas('GF_assets_tutorial'));
+							tex = jointex(tex, jointex(Paths.getSparrowAtlas('GF_Toturial'), Paths.getSparrowAtlas('GF_Toturial2')));
 						}
 					case 'philly':
 						tex = jointex(tex, jointex(Paths.getSparrowAtlas('GF_assets_blowing'), Paths.getSparrowAtlas('GF_ass_sets_landing')));
