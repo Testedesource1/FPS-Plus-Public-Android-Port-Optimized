@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="GF_Toturial2.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GF Right Note0000" x="0" y="0" width="699" height="632" frameX="-2" frameY="-5" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Right Note0001" x="699" y="0" width="703" height="632" frameX="0" frameY="-5" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Right Note0002" x="1402" y="0" width="703" height="637"/>
+	<SubTexture name="GF Right Note0003" x="2105" y="0" width="699" height="637" frameX="-2" frameY="0" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Right Note0004" x="2804" y="0" width="699" height="637" frameX="-2" frameY="0" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Right Note0005" x="0" y="637" width="699" height="637" frameX="-2" frameY="0" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Right Note0006" x="699" y="637" width="699" height="637" frameX="-2" frameY="0" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Right Note0007" x="699" y="637" width="699" height="637" frameX="-2" frameY="0" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Right Note0008" x="1398" y="637" width="699" height="637" frameX="-2" frameY="0" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Right Note0009" x="1398" y="637" width="699" height="637" frameX="-2" frameY="0" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Right Note0010" x="1398" y="637" width="699" height="637" frameX="-2" frameY="0" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Right Note0011" x="1398" y="637" width="699" height="637" frameX="-2" frameY="0" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Right Note0012" x="1398" y="637" width="699" height="637" frameX="-2" frameY="0" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Right Note0013" x="1398" y="637" width="699" height="637" frameX="-2" frameY="0" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Right Note0014" x="1398" y="637" width="699" height="637" frameX="-2" frameY="0" frameWidth="703" frameHeight="637"/>
+	<SubTexture name="GF Up Note0000" x="2097" y="637" width="699" height="661" frameX="-2" frameY="0" frameWidth="703" frameHeight="661"/>
+	<SubTexture name="GF Up Note0001" x="2796" y="637" width="703" height="661"/>
+	<SubTexture name="GF Up Note0002" x="0" y="1298" width="703" height="661"/>
+	<SubTexture name="GF Up Note0003" x="703" y="1298" width="699" height="661" frameX="-2" frameY="0" frameWidth="703" frameHeight="661"/>
+	<SubTexture name="GF Up Note0004" x="1402" y="1298" width="699" height="661" frameX="-2" frameY="0" frameWidth="703" frameHeight="661"/>
+	<SubTexture name="GF Up Note0005" x="1402" y="1298" width="699" height="661" frameX="-2" frameY="0" frameWidth="703" frameHeight="661"/>
+	<SubTexture name="GF Up Note0006" x="1402" y="1298" width="699" height="661" frameX="-2" frameY="0" frameWidth="703" frameHeight="661"/>
+</TextureAtlas>
